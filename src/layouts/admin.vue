@@ -5,3 +5,8 @@
 </template>
 
 <style lang="scss"></style>
+<script lang="ts">
+export default {
+    route: { meta: { auth: true } },
+};
+</script>

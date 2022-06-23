@@ -32,6 +32,12 @@ const form = reactive<{ account: number | string; password: string }>({
 });
 </script>
 
+<script lang="ts">
+export default {
+    route: { name: "login" },
+};
+</script>
+
 <template>
     <Form @submit="onSubmit" :validation-schema="schema" #default="{ errors }">
         <div

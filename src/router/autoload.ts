@@ -53,7 +53,7 @@ function getRouteByModule(file: string, module: { [key: string]: any }) {
 }
 // console.log(typeof env.VITE_ROUTER_AUTOLOAD)
 // 路由自动注册根据配置文件来进行是否自动注册
-console.log(getRoutes())
+// console.log(getRoutes())
 const routes = util.env.VITE_ROUTER_AUTOLOAD ? getRoutes() : ([] as RouteRecordRaw[])
 // console.log(util.env.VITE_ROUTER_AUTOLOAD)
 export default routes
