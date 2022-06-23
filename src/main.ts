@@ -2,6 +2,7 @@ import { createApp } from 'vue'
 
 import App from './App.vue'
 import { setUpPlugins } from './plugins'
+import '@/styles/global.scss'
 
 import router, { setUpRouter } from './router'
 

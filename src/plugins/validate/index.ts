@@ -7,6 +7,8 @@ import yup from './yup'
 
 // 配置多语言【得放规则验证前面】
 veeValidate.configure({
+    // 全局在input输入行为发生的时候验证
+    // validateOnInput: true
     generateMessage: localize('zh_CN'),
 })
 

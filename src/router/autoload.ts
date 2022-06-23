@@ -1,5 +1,5 @@
 import { RouteLocationRaw, RouteRecordRaw } from 'vue-router'
-import { env } from '@/utils/helper'
+import util from '@/utils'
 
 // 自动注册路由
 const layouts = import.meta.globEager('../layouts/*.vue')
@@ -53,5 +53,7 @@ function getRouteByModule(file: string, module: { [key: string]: any }) {
 }
 // console.log(typeof env.VITE_ROUTER_AUTOLOAD)
 // 路由自动注册根据配置文件来进行是否自动注册
-const routes = env.VITE_ROUTER_AUTOLOAD ? getRoutes() : ([] as RouteRecordRaw[])
+console.log(getRoutes())
+const routes = util.env.VITE_ROUTER_AUTOLOAD ? getRoutes() : ([] as RouteRecordRaw[])
+// console.log(util.env.VITE_ROUTER_AUTOLOAD)
 export default routes

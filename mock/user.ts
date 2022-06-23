@@ -20,7 +20,7 @@ export default [
         },
     },
     {
-        url: '/api/post',
+        url: '/api/login',
         method: 'post',
         timeout: 2000,
         response: () => {
